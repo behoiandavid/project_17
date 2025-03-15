@@ -1,4 +1,4 @@
-@import '../css/variables.scss';
+@import './variables.scss';
 
 
 body {
@@ -408,9 +408,11 @@ a {
 
 .section3-form {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    gap: 5px;
+    max-width: 100%;
+    width: 100%;
+    gap: 5px; 
 }
 
 .section3-form input:focus {
@@ -1249,7 +1251,7 @@ a {
     .nav-mobile {
         display: none;
         position: absolute;
-        right: 0;
+        right: 20px;
         top: 25px;
         width: 90px;
         padding: 10px;
@@ -1257,10 +1259,12 @@ a {
     }
 
     .nav-mobile-descriptions {
+        padding: $p-10;
+        width: 100px;
         display: flex;
         align-items: center;
         flex-direction: column;
-        gap: 20px;
+        gap: 30px;
         background-color: $color-japaneseindigo;
         border: solid 2px $color-white;
         border-radius: 10px

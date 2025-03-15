@@ -371,8 +371,10 @@ a {
 
 .section3-form {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
+  max-width: 100%;
+  width: 100%;
   gap: 5px;
 }
 
@@ -1091,17 +1093,19 @@ a {
   .nav-mobile {
     display: none;
     position: absolute;
-    right: 0;
+    right: 20px;
     top: 25px;
     width: 90px;
     padding: 10px;
     transition: transform 0.3sease-in-out;
   }
   .nav-mobile-descriptions {
+    padding: 10px;
+    width: 100px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
     background-color: #2D3651;
     border: solid 2px #FFFFFF;
     border-radius: 10px;
