@@ -6,7 +6,7 @@
 }
 
 header {
-  background-image: url(../images/header-block.png);
+  background-image: url("../images/header-block.png");
   object-fit: cover;
   background-repeat: no-repeat;
   background-size: cover;
@@ -117,8 +117,8 @@ a {
 .section2-header {
   padding: 200px 10px 200px 10px;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
   gap: 40px;
 }
@@ -276,8 +276,8 @@ a {
   .section2-header {
     padding: 90px 10px 81px 10px;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
     gap: 20px;
   }
@@ -349,9 +349,9 @@ a {
 }
 @media (min-width: 320px) and (max-width: 599px) {
   header {
-    background-image: url(../images/header-block.png);
+    background-image: url("../images/header-block.png");
+    object-fit: cover;
     background-repeat: no-repeat;
-    height: 576px;
     background-size: cover;
   }
   .bg-opacity {
@@ -420,7 +420,7 @@ a {
   }
   .checkbtn {
     font-size: 1.5em;
-    color: white;
+    color: #FFFFFF;
     cursor: pointer;
     right: 0;
   }
@@ -472,8 +472,8 @@ a {
   .section2-header {
     padding: 150px 10px 16px 10px;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
     gap: 30px;
   }

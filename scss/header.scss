@@ -1,4 +1,5 @@
 @import './variables.scss';
+@import './mixin.scss';
 
 .container {
     max-width: 1200px;
@@ -8,10 +9,7 @@
 }
 
 header {
-    background-image: url(../images/header-block.png);
-    object-fit: cover;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include background-cover("../images/header-block.png");
 }
 
 a {
@@ -39,9 +37,7 @@ a {
 
 .section1-header {
     padding: $p-10;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    @include flex-row-center;
     justify-content: space-between;
 }
 
@@ -65,10 +61,8 @@ a {
 }
 
 .header-nav-description {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 40px;
+    @include flex-row-center;
+    gap: $gap-40;
 }
 
 .header-nav-description :nth-child(1) {
@@ -128,11 +122,9 @@ a {
 
 .section2-header {
     padding: 200px 10px 200px 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-column-center;
     justify-content: center;
-    gap: 40px;
+    gap: $gap-40;
 }
 
 .section2-header-text h1 {
@@ -157,9 +149,8 @@ a {
 }
 
 .section2-header-button {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
+    @include flex-row;
+    gap: $gap-20;
 }
 
 .section2-header-button button {
@@ -226,9 +217,7 @@ a {
 
     .section1-header {
         padding: $p-10;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+        @include flex-row-center;
         justify-content: space-between;
     }
 
@@ -252,10 +241,8 @@ a {
     }
 
     .header-nav-description {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 40px;
+        @include flex-row-center;
+        gap: $gap-40;
 
     }
 
@@ -312,16 +299,14 @@ a {
 
     .section2-header {
         padding: 90px 10px 81px 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex-column-center;
         justify-content: center;
-        gap: 20px;
+        gap: $gap-20;
     }
 
     .section2-header-text h1 {
         font-family: $font-roboto-slab;
-        font-size: 30px;
+        font-size: $gap-30;
         line-height: 79.13px;
         font-weight: 300;
         color: $color-white;
@@ -341,9 +326,8 @@ a {
     }
 
     .section2-header-button {
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
+        @include flex-row;
+        gap: $gap-20;
     }
 
     .section2-header-button button {
@@ -399,10 +383,7 @@ a {
 
 @media(min-width: 320px) and (max-width:599px) {
     header {
-        background-image: url(../images/header-block.png);
-        background-repeat: no-repeat;
-        height: 576px;
-        background-size: cover;
+        @include background-cover("../images/header-block.png");
     }
 
     .bg-opacity {
@@ -422,12 +403,9 @@ a {
         padding: 0 15px;
     }
 
-
     .section1-header {
         padding: $p-10;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+        @include flex-row-center;
     }
 
     .section1-logo {
@@ -467,17 +445,15 @@ a {
         right: 20px;
         top: 25px;
         width: 90px;
-        padding: 10px;
+        padding: $p-10;
         transition: transform 0.3s ease-in-out;
     }
 
     .nav-mobile-descriptions {
         padding: $p-10;
         width: 100px;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        gap: 30px;
+        @include flex-column-center;
+        gap: $gap-30;
         background-color: $color-japaneseindigo;
         border: solid 2px $color-white;
         border-radius: 10px
@@ -485,7 +461,7 @@ a {
 
     .checkbtn {
         font-size: 1.5em;
-        color: white;
+        color: $color-white;
         cursor: pointer;
         right: 0;
     }
@@ -548,11 +524,9 @@ a {
 
     .section2-header {
         padding: 150px 10px 16px 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex-column-center;
         justify-content: center;
-        gap: 30px;
+        gap: $gap-30;
     }
 
     .section2-header-text h1 {
@@ -579,9 +553,8 @@ a {
     }
 
     .section2-header-button {
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
+        @include flex-row;
+        gap: $gap-20;
     }
 
     .section2-header-button button {

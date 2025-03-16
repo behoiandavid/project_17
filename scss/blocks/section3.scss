@@ -1,0 +1,74 @@
+.section3-block {
+    padding: $p-10;
+    @include flex-row-center;
+}
+
+.section3-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
+    gap: 5px;
+}
+
+.section3-form input:focus {
+    border: solid 2px $color-white;
+    outline: none;
+}
+
+.section3-form input {
+    padding-left: $p-20;
+    border: none;
+    width: 380px;
+    height: 60px;
+    background: $color-translucent-black;
+    border-bottom: solid 2px $color-white;
+    outline: none;
+    caret-color: $color-white;
+}
+
+.section3-form input:focus {
+    color: $color-white;
+    caret-color: $color-white;
+}
+
+.section3-form input::placeholder:last-child {
+    font-size: none;
+    line-height: 39px;
+    color: none;
+}
+
+.section3-form input {
+    @include placeholder-style;
+}
+
+.section3-form input:focus::placeholder {
+    background: $color-white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.section3-form input::placeholder:hover {
+    color: $color-white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section3-form button {
+    background: $color-dark-blue;
+    border-bottom: solid 2px $color-white;
+    width: 380px;
+    height: 60px;
+    font-size: $text-lg;
+    color: $color-white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.section3-form button:hover {
+    border: solid 2px $color-white;
+    outline: none;
+    background-color: $color-chocolate;
+}

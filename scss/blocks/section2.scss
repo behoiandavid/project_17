@@ -1,0 +1,41 @@
+.section2-block {
+    padding: 100px 10px 100px 10px;
+    @include flex-row-center;
+    justify-content: space-between;
+}
+
+.section2-block-left {
+    @include flex-column;
+    gap: $gap-30;
+}
+
+.section2-block-left h2 {
+    font-family: $font-roboto-slab;
+    width: 354px;
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: $bold;
+    color: $color-japaneseindigo;
+}
+
+.section2-block-text {
+    @include flex-column;
+    gap: $gap-20;
+}
+
+.section2-block-text :nth-child(1)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 200px;
+    border-right: solid 1px $color-darksilver;
+}
+
+.section2-block-text p {
+    font-family: $font-roboto;
+    font-size: $text-lg;
+    position: relative;
+    line-height: 24px;
+    color: $color-aurometalsaurus;
+}

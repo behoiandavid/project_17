@@ -1,0 +1,23 @@
+.section1-block-button {
+    padding: $p-10;
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+}
+
+.section1-block-button button {
+    font-family: $font-roboto;
+    width: 350px;
+    height: 60px;
+    font-size: $text-lg;
+    color: $color-white;
+    background: $color-translucent-blue;
+    border: solid 2px $color-japaneseindigo;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.section1-block-button button:hover {
+    border: solid 2px $color-japaneseindigo;
+    background-color: $color-chocolate;
+}

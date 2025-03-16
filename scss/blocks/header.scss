@@ -1,0 +1,225 @@
+@import '../variables.scss';
+@import '../mixin.scss';
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+header {
+    @include background-cover("../images/header-block.png");
+}
+
+a {
+    text-decoration: none;
+    font-size: $text-lg;
+    line-height: 20px;
+    color: $color-white;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+header {
+    background-image: url(../images/header-block.png);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    font-size: $text-lg;
+    line-height: 20px;
+    color: $color-white;
+}
+
+.active {
+    color: $color-chocolate ;
+}
+
+.bg-gray {
+    background-color: $color-platinum;
+}
+
+.bg-darkblue {
+    background-color: $color-japaneseindigo;
+}
+
+.mobile-navigation {
+    display: none;
+}
+
+.section1-header {
+    padding: $p-10;
+    @include flex-row-center;
+    justify-content: space-between;
+}
+
+.section1-logo {
+    transform: translateX(-100px);
+    animation: hiden1 2s ease forwards;
+}
+
+@keyframes hiden1 {
+
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+.header-nav-description {
+    @include flex-row-center;
+    gap: $gap-40;
+}
+
+.header-nav-description :nth-child(1) {
+    transform: translateY(100px);
+    animation: hiden2 2s ease forwards;
+}
+
+@keyframes hiden2 {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.header-nav-description :nth-child(2) {
+    transform: translateX(-100px);
+    animation: hiden3 2s ease forwards;
+}
+
+@keyframes hiden3 {
+    from {
+        opacity: 0;
+        transform: translatex(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translatex(0);
+    }
+}
+
+.bg-opacity {
+    background: none;
+}
+
+.header-nav-description :nth-child(3) {
+    transform: translateX(100px);
+    animation: hiden4 2s ease forwards;
+}
+
+@keyframes hiden4 {
+    from {
+        opacity: 0;
+        transform: translatex(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translatex(0);
+    }
+}
+
+.section2-header {
+    padding: 200px 10px 200px 10px;
+    @include flex-column-center;
+    justify-content: center;
+    gap: $gap-40;
+}
+
+.section2-header-text h1 {
+    font-family: $font-roboto-slab;
+    font-size: 60px;
+    line-height: 79.13px;
+    font-weight: 300;
+    color: $color-white;
+    animation: hiden5 2s ease forwards;
+}
+
+@keyframes hiden5 {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.section2-header-button {
+    @include flex-row;
+    gap: $gap-20;
+}
+
+.section2-header-button button {
+    width: 250px;
+    height: 60px;
+    font-size: $text-lg;
+    line-height: 21.09px;
+    color: $color-white;
+    border: solid 2px $color-white;
+    background: $color-translucent-black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.section2-header-button button:hover {
+    background-color: $color-chocolate;
+}
+
+.button1 {
+    transform: translateX(-100px);
+    animation: hiden6 2s ease forwards;
+}
+
+@keyframes hiden6 {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.button2 {
+    transform: translateX(100px);
+    animation: hiden7 2s ease forwards;
+}
+
+@keyframes hiden7 {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
