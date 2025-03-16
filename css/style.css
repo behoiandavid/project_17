@@ -995,7 +995,7 @@ a {
     object-fit: cover;
   }
   .section4-posts-grid .post .posts-grid-text {
-    height: 270px;
+    height: 301px;
     padding: 10px 10px;
     display: flex;
     flex-direction: column;
@@ -1013,7 +1013,7 @@ a {
   }
   .section4-posts-grid .post p {
     font-family: Roboto;
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
     line-height: 20px;
     color: #637588;
@@ -1325,6 +1325,7 @@ a {
     padding: 100px 10px 100px 10px;
     display: flex;
     flex-direction: column;
+    gap: 40px;
     align-items: center;
   }
   .section2-block-left {
