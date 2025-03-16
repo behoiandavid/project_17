@@ -214,14 +214,8 @@
     color: none;
 }
 
-.section3-form input::placeholder {
-    font-family: $font-family2;
-    font-size: $text-lg;
-    line-height: 39px;
-    background: $background2;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: $color-white;
+.section3-form input {
+    @include placeholder-style;
 }
 
 .section3-form input:focus::placeholder {
@@ -583,14 +577,8 @@
         color: none;
     }
 
-    .section3-form input::placeholder {
-        font-family: $font-family2;
-        font-size: $text-lg;
-        line-height: 39px;
-        background: $background2;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        color: $color-white;
+    .section3-form input {
+        @include placeholder-style;
     }
 
     .section3-form input:focus::placeholder {
@@ -878,14 +866,8 @@
         color: none;
     }
 
-    .section3-form input::placeholder {
-        font-family: $font-family2;
-        font-size: $text-lg;
-        line-height: 39px;
-        background: $background2;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        color: $color-white;
+    .section3-form input {
+        @include placeholder-style;
     }
 
     .section3-form input:focus::placeholder {

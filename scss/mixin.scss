@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 @mixin grid-child-styles($count) {
     @for $i from 1 through $count {
         div:nth-child(#{$i}) {
@@ -12,3 +14,14 @@
     object-fit: cover;
 }
 
+@mixin placeholder-style {
+    &::placeholder {
+        font-family: $font-family2;
+        font-size: $text-lg;
+        line-height: 39px;
+        background: $background2;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: $color-white;
+    }
+}
