@@ -5,3 +5,10 @@
         }
     }
 }
+
+@mixin bg-image($url) {
+    background-image: url(#{$url});
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+

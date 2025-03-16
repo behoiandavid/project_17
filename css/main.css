@@ -6,10 +6,10 @@
 }
 
 .grid-container {
-  padding: 10px 0 10px 10px;
+  padding: 10px 10px 10px 10px;
   display: grid;
   grid-template-rows: repeat(3, 350px);
-  grid-template-columns: repeat(4, calc((100% - 40px) / 4));
+  grid-template-columns: repeat(4, 1fr);
   gap: 8px;
 }
 .grid-container div {
@@ -49,51 +49,51 @@
 .grid-container div:nth-child(1) {
   grid-column: 1/3;
   background-image: url(../images/grid-img/img-html.png);
-  object-fit: cover;
   background-repeat: no-repeat;
+  object-fit: cover;
 }
 .grid-container div:nth-child(2) {
   background-image: url(../images/grid-img/img-css.png);
-  object-fit: cover;
   background-repeat: no-repeat;
+  object-fit: cover;
 }
 .grid-container div:nth-child(3) {
   background-image: url(../images/grid-img/img-markup.png);
-  object-fit: cover;
   background-repeat: no-repeat;
+  object-fit: cover;
 }
 .grid-container div:nth-child(4) {
   background-image: url(../images/grid-img/img-webdesign.png);
-  object-fit: cover;
   background-repeat: no-repeat;
+  object-fit: cover;
 }
 .grid-container div:nth-child(5) {
   grid-column: 2/4;
   background-image: url(../images/grid-img/img-qa.png);
-  object-fit: cover;
   background-repeat: no-repeat;
+  object-fit: cover;
 }
 .grid-container div:nth-child(6) {
   grid-row: 2/4;
   grid-column: 4;
   background-image: url(../images/grid-img/img-codding.png);
-  object-fit: cover;
   background-repeat: no-repeat;
+  object-fit: cover;
 }
 .grid-container div:nth-child(7) {
   background-image: url(../images/grid-img/img-adaptability.png);
-  object-fit: cover;
   background-repeat: no-repeat;
+  object-fit: cover;
 }
 .grid-container div:nth-child(8) {
   background-image: url(../images/grid-img/img-php.png);
-  object-fit: cover;
   background-repeat: no-repeat;
+  object-fit: cover;
 }
 .grid-container div:nth-child(9) {
   background-image: url(../images/grid-img/img-seo.png);
-  object-fit: cover;
   background-repeat: no-repeat;
+  object-fit: cover;
 }
 
 .section1-block-button {
@@ -104,7 +104,7 @@
 }
 
 .section1-block-button button {
-  font-family: Roboto;
+  font-family: "Roboto";
   width: 350px;
   height: 60px;
   font-size: 18px;
@@ -135,7 +135,7 @@
 }
 
 .section2-block-left h2 {
-  font-family: Roboto Slab;
+  font-family: "Roboto Slab";
   width: 354px;
   font-size: 40px;
   line-height: 48px;
@@ -159,7 +159,7 @@
 }
 
 .section2-block-text p {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 18px;
   position: relative;
   line-height: 24px;
@@ -210,7 +210,7 @@
 }
 
 .section3-form input::placeholder {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 18px;
   line-height: 39px;
   background: rgba(255, 255, 255, 0.5098039216);
@@ -302,7 +302,7 @@
   color: #637588;
 }
 .section4-posts-grid .post p {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 16px;
   text-align: center;
   line-height: 20px;
@@ -315,7 +315,7 @@
 }
 
 .section4-button button {
-  font-family: Roboto;
+  font-family: "Roboto";
   width: 350px;
   height: 60px;
   font-size: 18px;
@@ -352,7 +352,7 @@
     transition: 0.3s;
   }
   .grid-container div h2 {
-    font-family: Roboto;
+    font-family: "Roboto";
     position: relative;
     z-index: 1;
   }
@@ -442,7 +442,7 @@
     justify-content: center;
   }
   .section1-block-button button {
-    font-family: Roboto;
+    font-family: "Roboto";
     width: 350px;
     height: 60px;
     font-size: 18px;
@@ -491,7 +491,7 @@
     border-right: solid 1px #707070;
   }
   .section2-block-text p {
-    font-family: Roboto;
+    font-family: "Roboto";
     font-size: 16px;
     position: relative;
     line-height: 24px;
@@ -536,7 +536,7 @@
     color: none;
   }
   .section3-form input::placeholder {
-    font-family: Roboto;
+    font-family: "Roboto";
     font-size: 18px;
     line-height: 39px;
     background: rgba(255, 255, 255, 0.5098039216);
@@ -628,7 +628,7 @@
     color: #637588;
   }
   .section4-posts-grid .post p {
-    font-family: Roboto;
+    font-family: "Roboto";
     font-size: 14px;
     text-align: center;
     line-height: 20px;
@@ -640,7 +640,7 @@
     justify-content: center;
   }
   .section4-button button {
-    font-family: Roboto;
+    font-family: "Roboto";
     width: 350px;
     height: 60px;
     font-size: 18px;
@@ -727,7 +727,7 @@
     justify-content: center;
   }
   .section1-block-button button {
-    font-family: Roboto;
+    font-family: "Roboto";
     width: 100%;
     height: 60px;
     font-size: 18px;
@@ -833,7 +833,7 @@
     color: none;
   }
   .section3-form input::placeholder {
-    font-family: Roboto;
+    font-family: "Roboto";
     font-size: 18px;
     line-height: 39px;
     background: rgba(255, 255, 255, 0.5098039216);
@@ -940,7 +940,7 @@
     justify-content: center;
   }
   .section4-button button {
-    font-family: Roboto;
+    font-family: "Roboto";
     width: 100%;
     height: 60px;
     font-size: 18px;
