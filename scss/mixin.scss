@@ -14,12 +14,25 @@
     object-fit: cover;
 }
 
-@mixin placeholder-style { 
+@mixin text-hover($size, $line-height, $weight, $color, $family, $hover-color) {
+    font-size: $size;
+    line-height: $line-height;
+    font-weight: $weight;
+    color: $color;
+    font-family: $family, sans-serif;
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: $hover-color;
+    }
+}
+
+@mixin placeholder-style {
     &::placeholder {
-        font-family: $font-family2;
+        font-family: $font-roboto;
         font-size: $text-lg;
         line-height: 39px;
-        background: $background2;
+        background: $color-translucent-white;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         color: $color-white;

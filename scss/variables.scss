@@ -7,20 +7,23 @@ $color-darksilver: #707070;
 $color-chocolate: #D66926;
 $color-japaneseindigo: #2D3651;
 $color-aurometalsaurus: #637588;
- 
+
 //font-family
 $font-roboto-slab: 'Roboto Slab';
 $font-roboto: 'Roboto';
 
 //size
 $text-lg: 18px;
+$text-xl: 20px; 
 
 //font-weight
-$bold: 700px;
+$bold: 700;
 
 //background
-$background: #FFFFFF1A;
-$background2: #FFFFFF82;
+$color-translucent-blue: #2D3651CC;
+$color-translucent-black: #FFFFFF1A; //$background: #FFFFFF1A;
+$color-translucent-white: #FFFFFF82; // $background2: #FFFFFF82;
+$color-dark-blue: #FFFFFF0D;
 
 //padding
 $p-10: 10px;

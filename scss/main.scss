@@ -15,7 +15,7 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 8px;
 
-    div { 
+    div {
         font-size: 20px;
         line-height: 23.44px;
         font-weight: $bold;
@@ -28,7 +28,7 @@
         background-size: cover;
 
         h2 {
-            font-family: Roboto;
+            font-family: $font-roboto;
             position: relative;
             z-index: 1;
         }
@@ -109,12 +109,12 @@
 }
 
 .section1-block-button button {
-    font-family: $font-family2;
+    font-family: $font-roboto;
     width: 350px;
     height: 60px;
     font-size: $text-lg;
     color: $color-white;
-    background: #2D3651CC;
+    background: $color-translucent-blue;
     border: solid 2px $color-japaneseindigo;
     cursor: pointer;
     transition: 0.3s;
@@ -140,7 +140,7 @@
 }
 
 .section2-block-left h2 {
-    font-family: $font-family;
+    font-family: $font-roboto-slab;
     width: 354px;
     font-size: 40px;
     line-height: 48px;
@@ -164,7 +164,7 @@
 }
 
 .section2-block-text p {
-    font-family: $font-family2;
+    font-family: $font-roboto;
     font-size: $text-lg;
     position: relative;
     line-height: 24px;
@@ -197,7 +197,7 @@
     border: none;
     width: 380px;
     height: 60px;
-    background: $background;
+    background: $color-translucent-black;
     border-bottom: solid 2px $color-white;
     outline: none;
     caret-color: $color-white;
@@ -232,7 +232,7 @@
 }
 
 .section3-form button {
-    background: #FFFFFF0D;
+    background: $color-dark-blue;
     border-bottom: solid 2px $color-white;
     width: 380px;
     height: 60px;
@@ -256,7 +256,7 @@
 }
 
 .section4-text h2 {
-    font-family: $font-family;
+    font-family: $font-roboto-slab;
     font-size: 40px;
     line-height: 48px;
     font-weight: $bold;
@@ -301,7 +301,7 @@
         }
 
         h2 {
-            font-family: $font-family;
+            font-family: $font-roboto-slab;
             font-size: $text-lg;
             text-align: center;
             line-height: 20px;
@@ -310,7 +310,7 @@
         }
 
         p {
-            font-family: $font-family2;
+            font-family: $font-roboto;
             font-size: 16px;
             text-align: center;
             line-height: 20px;
@@ -325,12 +325,12 @@
 }
 
 .section4-button button {
-    font-family: $font-family2;
+    font-family: $font-roboto;
     width: 350px;
     height: 60px;
     font-size: $text-lg;
     color: $color-white;
-    background: #2D3651CC;
+    background: $color-translucent-blue;
     border: solid 2px $color-japaneseindigo;
     cursor: pointer;
     transition: 0.3s;
@@ -347,14 +347,12 @@
         display: grid;
         justify-content: center;
         grid-template-rows: repeat(5, 350px);
-        grid-template-columns: repeat(3, calc((100% - 40px) / 3));
+        grid-gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
         gap: 8px;
 
         div {
-            font-size: 20px;
-            line-height: 23.44px;
-            font-weight: $bold;
-            color: $color-white;
+            @include text-hover($text-lg, 1.4, $bold, $color-white, $font-roboto, $color-chocolate);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -362,18 +360,9 @@
             transition: 0.3s;
 
             h2 {
-                font-family: $font-family2;
+                font-family: $font-roboto;
                 position: relative;
                 z-index: 1;
-            }
-        }
-
-        div:hover {
-            color: $color-chocolate;
-
-            &::before {
-                background-color: $color-japaneseindigo;
-                opacity: 0.8;
             }
         }
 
@@ -468,7 +457,7 @@
     }
 
     .section1-block-button button {
-        font-family: $font-family2;
+        font-family: $font-roboto;
         width: 350px;
         height: 60px;
         font-size: $text-lg;
@@ -499,7 +488,7 @@
     }
 
     .section2-block-left h2 {
-        font-family: $font-family;
+        font-family: $font-roboto-slab;
         width: 213px;
         font-size: 24px;
         line-height: 32px;
@@ -524,7 +513,7 @@
     }
 
     .section2-block-text p {
-        font-family: $font-family2;
+        font-family: $font-roboto;
         font-size: 16px;
         position: relative;
         line-height: 24px;
@@ -620,7 +609,7 @@
     }
 
     .section4-text h2 {
-        font-family: $font-family;
+        font-family: $font-roboto-slab;
         font-size: 24px;
         line-height: 32px;
         font-weight: $bold;
@@ -672,7 +661,7 @@
             }
 
             h2 {
-                font-family: $font-family;
+                font-family: $font-roboto-slab;
                 font-size: $text-lg;
                 text-align: center;
                 line-height: 20px;
@@ -681,7 +670,7 @@
             }
 
             p {
-                font-family: $font-family2;
+                font-family: $font-roboto;
                 font-size: 14px;
                 text-align: center;
                 line-height: 20px;
@@ -697,7 +686,7 @@
     }
 
     .section4-button button {
-        font-family: $font-family2;
+        font-family: $font-roboto;
         width: 350px;
         height: 60px;
         font-size: $text-lg;
@@ -745,7 +734,7 @@
     }
 
     .section1-block-button button {
-        font-family: $font-family2;
+        font-family: $font-roboto;
         width: 100%;
         height: 60px;
         font-size: $text-lg;
@@ -777,7 +766,7 @@
     }
 
     .section2-block-left h2 {
-        font-family: $font-family;
+        font-family: $font-roboto-slab;
         text-align: center;
         width: 213px;
         font-size: 24px;
@@ -897,7 +886,7 @@
     }
 
     .section4-text h2 {
-        font-family: $font-family;
+        font-family: $font-roboto-slab;
         font-size: 24px;
         text-align: center;
         line-height: 32px;
@@ -953,7 +942,7 @@
             }
 
             h2 {
-                font-family: $font-family;
+                font-family: $font-roboto-slab;
                 font-size: $text-lg;
                 text-align: center;
                 line-height: 20px;
@@ -962,7 +951,7 @@
             }
 
             p {
-                font-family: Roboto;
+                font-family: $font-roboto;
                 font-size: 16px;
                 text-align: center;
                 line-height: 20px;
@@ -977,7 +966,7 @@
     }
 
     .section4-button button {
-        font-family: $font-family2;
+        font-family: $font-roboto;
         width: 100%;
         height: 60px;
         font-size: $text-lg;
