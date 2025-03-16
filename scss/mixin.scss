@@ -1,0 +1,7 @@
+@mixin grid-child-styles($count) {
+    @for $i from 1 through $count {
+        div:nth-child(#{$i}) {
+            grid-column: 1 / 1;
+        }
+    }
+}
